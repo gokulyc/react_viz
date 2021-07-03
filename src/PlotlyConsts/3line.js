@@ -48,7 +48,7 @@ const line2 = () => {
         title: "Line and Scatter Plot",
     };
 
-    return { data, layout: null };
+    return { data, layout: layout };
 };
 
 // Adding Names to Line and Scatter Plot
@@ -78,7 +78,7 @@ const line3 = () => {
         title: "Adding Names to Line and Scatter Plot",
     };
 
-    return { data, layout: null };
+    return { data, layout: layout };
 };
 
 // Line and Scatter Styling
@@ -121,7 +121,7 @@ const line4 = () => {
         title: "Line and Scatter Styling",
     };
 
-    return { data, layout: null };
+    return { data, layout: layout };
 };
 
 // Styling Line Plot
@@ -157,7 +157,7 @@ const line5 = () => {
         height: 500,
     };
 
-    return { data, layout: null };
+    return { data, layout };
 };
 
 // Colored and Styled Scatter Plot
@@ -256,7 +256,7 @@ const line6 = () => {
         },
     };
 
-    return { data, layout: null };
+    return { data, layout };
 };
 // const line7= null;
 

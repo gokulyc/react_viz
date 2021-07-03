@@ -80,47 +80,44 @@ function Charts1() {
                 <Bar dataKey="uv" fill="#8884d8" barSize={30} />
             </LineChart>
         );
-    }, []);
+    });
 
-    const renderBarChart = useCallback(
-        () => (
-            <BarChart width={600} height={300} data={data}>
-                <XAxis dataKey="name" stroke="#8884d8" />
-                <YAxis />
-                <Tooltip />
-                <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                <Bar dataKey="uv" fill="#8884d8" barSize={30} />
-                <Legend
-                    width={100}
-                    wrapperStyle={{
-                        top: 20,
-                        left: 150,
-                        backgroundColor: "#f5f5f5",
-                        border: "1px solid #d5d5d5",
-                        borderRadius: 3,
-                        lineHeight: "40px",
-                    }}
-                />
-            </BarChart>
-        ),
-        []
-    );
+    const renderBarChart = useCallback(() => (
+        <BarChart width={600} height={300} data={data}>
+            <XAxis dataKey="name" stroke="#8884d8" />
+            <YAxis />
+            <Tooltip />
+            <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+            <Bar dataKey="uv" fill="#8884d8" barSize={30} />
+            <Legend
+                width={100}
+                wrapperStyle={{
+                    top: 20,
+                    left: 150,
+                    backgroundColor: "#f5f5f5",
+                    border: "1px solid #d5d5d5",
+                    borderRadius: 3,
+                    lineHeight: "40px",
+                }}
+            />
+        </BarChart>
+    ));
     return (
         <Fragment>
             <Grid item xs={3}>
-                <Paper className={classes.paper} >
-                    {"Recharts -> 1"}
-                </Paper>
+                <Paper className={classes.paper}>{"Recharts -> 1"}</Paper>
             </Grid>
             <Grid item xs={9}>
-                <Paper className={classes.paper} elevation={10} variant='elevation'>
+                <Paper
+                    className={classes.paper}
+                    elevation={10}
+                    variant="elevation"
+                >
                     {renderLineChart()}
                 </Paper>
             </Grid>
             <Grid item xs={3}>
-                <Paper className={classes.paper} >
-                    {"Recharts -> 2"}
-                </Paper>
+                <Paper className={classes.paper}>{"Recharts -> 2"}</Paper>
             </Grid>
             <Grid item xs={9}>
                 <Paper className={classes.paper} elevation={10}>
