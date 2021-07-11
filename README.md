@@ -1,3 +1,9 @@
+# Getting Started
+
+Visit [https://nifty-kalam-ca4e3a.netlify.app/](https://nifty-kalam-ca4e3a.netlify.app/) to get started.
+
+***
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
